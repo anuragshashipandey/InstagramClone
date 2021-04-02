@@ -1,7 +1,7 @@
 import React,{ useState } from "react"
 import logo from './images/insta_logo.png';
 import "./style/App_header.css"
-import axios from 'axios'
+
 
 export default function Appheader(props) {
 

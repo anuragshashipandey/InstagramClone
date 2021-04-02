@@ -1,9 +1,11 @@
-import React,{ useState,useContext  } from 'react'
+import React from 'react'
 import Post from "./Post";
-import { UsernameContext } from './UsernameContext';
+
+import { v4 as uuidv4 } from 'uuid';
 
 export default function AppContent(props) {
     let defaultimg={
+                    key:0,
                     tags: "blossom, bloom, flower",
                     largeImageURL
                     :
@@ -26,7 +28,7 @@ export default function AppContent(props) {
                     "https://pixabay.com/get/geb43ae7725eed50c3e9cdca05646e1c2281a5c3f1da737d1e5bc04de9b95aec36c93b36c4231e3fdd62b51c6703fb0719dd7f81891a740b006c41358f02f18fb_640.jpg"
     }
 
-    const { username }=useContext(UsernameContext);
+   
     return (
         <div className='AppContent' style={
            {
@@ -34,14 +36,14 @@ export default function AppContent(props) {
                 marginRight:'20%',
            }
         }>
-            {props.images.map( img=>(
-               <Post imgdetail={img} />
+            {props.images.map( img=>(   
+               <Post key={uuidv4()} imgdetail={img} />
             ))}
                 {(props.images.length==='0')?console.log("image passed"):
                     <div>
-                    <Post imgdetail={defaultimg} />
-                    <Post imgdetail={defaultimg} />
-                    <Post imgdetail={defaultimg} />
+                    <Post key={uuidv4()} imgdetail={defaultimg} />
+                    <Post key={uuidv4()} imgdetail={defaultimg} />
+                    <Post key={uuidv4()} imgdetail={defaultimg} />
                     </div>
                 }
                 

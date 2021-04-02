@@ -2,13 +2,13 @@ import React,{ useContext } from 'react'
 import "./style/Post.css"
 import Avatar from '@material-ui/core/Avatar';
 import { UsernameContext } from './UsernameContext';
-import { PostContext } from './PostContext';
+
 
 
 
 function Post(props) {
     const { username }=useContext(UsernameContext);
-    const { postname }= useContext(PostContext);
+
     return (
         <div className='Post'>
             <div className='Post_header'>    
