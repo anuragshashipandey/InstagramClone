@@ -12,14 +12,14 @@ function Post(props) {
     return (
         <div className='Post'>
             <div className='Post_header'>    
-                <Avatar alt={postname} src='./avatar/anurag.jpg'/>
-                <h4>{postname}</h4>
+                <Avatar alt={postname} src={props.imgdetail.userImageURL} />
+                <h4>{props.imgdetail.user}</h4>
             </div>
-                <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9B/production/_111434467_gettyimages-1143489763.jpg"
-                    alt='username_img' />
+                <img src={props.imgdetail.largeImageURL}
+                    alt={props.imgdetail.user} />
                 <p>
                     <b>Anonymouse</b>
-                     this is a cat pic
+                    {props.imgdetail.tags}
                     </p>
                 <div className='PostComment'>
                     <Avatar className='CommentAvatar' alt={username} src='./avatar/anurag.jpg'/>
