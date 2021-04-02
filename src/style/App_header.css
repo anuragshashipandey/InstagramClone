@@ -1,0 +1,12 @@
+.app_logo{
+    padding:2px;
+   
+    object-fit: contain;
+}
+.App_header{
+    background-color:white;
+    display: flex;
+}
+.search_bar{
+    border: 1px thin lightgrey;
+}
