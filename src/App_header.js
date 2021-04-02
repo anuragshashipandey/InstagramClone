@@ -16,7 +16,8 @@ export default function Appheader(props) {
           setsearch(e.target.value);
           }}
           onSubmit={ e =>{
-            props.getImage(e)
+            e.preventDefault();
+            props.getImage(search)
           }}
         >
             <input type='Text' placeholder='Search' />

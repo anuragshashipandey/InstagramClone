@@ -30,10 +30,8 @@ export default function AppContent(props) {
     return (
         <div className='AppContent' style={
            {
-                position:'fixed',
                 marginLeft:'20%',
-                marginRight:'20%'
-
+                marginRight:'20%',
            }
         }>
             {props.images.map( img=>(
