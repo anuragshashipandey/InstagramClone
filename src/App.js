@@ -5,7 +5,6 @@ import axios from 'axios'
 
 
 import { UsernameProvider } from "./UsernameContext";
-import { PostProvider } from "./PostContext";
 import AppContent from './AppContent';
 
 
@@ -34,4 +33,3 @@ function App() {
 }
 
 export default App;
-//background-color: #fafafa;

@@ -5,10 +5,13 @@
 .App_header{
     background-color:rgb(255, 255, 255);
     display: flex;
+    padding-bottom: 5px;
     border-bottom: 1px solid lightgray;
 }
 .search_bar{
     border: 1px thin lightgrey;
     position: absolute;
     right: 50%;
+    transform: scale(1.25);
+    margin-top: 8px;
 }

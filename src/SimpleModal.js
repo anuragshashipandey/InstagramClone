@@ -54,10 +54,9 @@ export default function SimpleModal() {
         <div>
         <button type="button" onClick={handleOpen} 
             style={{
-                position: 'absolute',
-                right: '5%',
+                margin:'10px',
                 color:'white',
-                transform:'scale(1.25)',
+                transform:'scale(1.4)',
                 backgroundColor:'#0099cc',
                 border:'1px solid ',
                 borderRadius:'5px',

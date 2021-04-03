@@ -40,7 +40,9 @@ console.log('return se pehle')
                         </p>
                     )):''}
                 <div className='PostComment'>
-                    <Avatar className='CommentAvatar' alt={username} src='./avatar/anurag.jpg'/>
+                    <Avatar className='CommentAvatar' alt={username} 
+                        src='https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+                    />
                     <form onSubmit={e=>{
                         e.preventDefault();
                         setcomment([...comment,{key:uuidv4(), user:username,comnt:commenttyped}])
