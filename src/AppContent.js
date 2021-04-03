@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default function AppContent(props) {
     let defaultimg={
-                    key:0,
+                    id:0,
                     tags: "blossom, bloom, flower",
                     largeImageURL
                     :
