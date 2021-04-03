@@ -3,7 +3,7 @@
     object-fit: contain;
 }
 .App_header{
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     display: flex;
     border-bottom: 1px solid lightgray;
 }

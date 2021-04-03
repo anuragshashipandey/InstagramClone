@@ -1,5 +1,6 @@
 import React,{ useState } from "react"
 import logo from './images/insta_logo.png';
+import SimpleModal from "./SimpleModal";
 import "./style/App_header.css"
 
 
@@ -22,7 +23,7 @@ export default function Appheader(props) {
         >
             <input type='Text' placeholder='Search' />
         </form>
-      
+          <SimpleModal />
     </div>
   );
 }
