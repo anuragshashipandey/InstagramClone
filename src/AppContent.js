@@ -28,6 +28,7 @@ export default function AppContent(props) {
                     "https://pixabay.com/get/geb43ae7725eed50c3e9cdca05646e1c2281a5c3f1da737d1e5bc04de9b95aec36c93b36c4231e3fdd62b51c6703fb0719dd7f81891a740b006c41358f02f18fb_640.jpg"
     }
 
+    let a=[uuidv4(),uuidv4(),uuidv4()];
    
     return (
         <div className='AppContent' style={
@@ -41,9 +42,10 @@ export default function AppContent(props) {
             ))}
                 {(props.images.length==='0')?console.log("image passed"):
                     <div>
-                    <Post key={uuidv4()} imgdetail={defaultimg} />
-                    <Post key={uuidv4()} imgdetail={defaultimg} />
-                    <Post key={uuidv4()} imgdetail={defaultimg} />
+                    
+                    <Post key={a[0]} imgdetail={defaultimg} />
+                    <Post key={a[1]} imgdetail={defaultimg} />
+                    <Post key={a[2]} imgdetail={defaultimg} />
                     </div>
                 }
                 
