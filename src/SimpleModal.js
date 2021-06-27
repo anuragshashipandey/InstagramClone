@@ -19,6 +19,8 @@ export default function SimpleModal() {
     const { changeUsername }=useContext(UsernameContext);
     const classes = useStyles();
     let modalStyle = {
+        width:'min(20%,40px)',
+        height:'auto',
       marginTop:'10%',
       marginLeft:'40%',
       backgroundColor : '#fafafa'
