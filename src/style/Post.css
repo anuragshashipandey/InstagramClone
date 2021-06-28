@@ -3,6 +3,7 @@
     max-width: 800px;
     border: 1px solid lightgray;
     margin: 1%;
+    background-color: rgba(189, 190, 190, 0.205);
 }
 .Post img {
     position: center;

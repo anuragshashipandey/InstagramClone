@@ -16,14 +16,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SimpleModal() {
-    const { changeUsername }=useContext(UsernameContext);
+    const { username,changeUsername }=useContext(UsernameContext);
     const classes = useStyles();
     let modalStyle = {
-        width:'min(20%,40px)',
+        width:'min(45%,400px)',
         height:'auto',
-      marginTop:'10%',
-      marginLeft:'40%',
-      backgroundColor : '#fafafa'
+        marginTop:'20%',
+        marginLeft:'min(28%,400px)',
+        backgroundColor : '#fafafa'
     }
     const [open, setOpen] = useState(false);
 
@@ -65,7 +65,7 @@ export default function SimpleModal() {
                 alignItems:'center',
                 focus:'false'
             }} >
-            Sign Up
+            {username===''?`User`:username}
         </button>
         <Modal
             open={open}

@@ -1,10 +1,12 @@
 import React,{useState} from 'react'
 import Appheader from "./App_header"
-import './App.css';
+import Notfound from "./Components/Notfound"
+import './style/App.css';
 import axios from 'axios';
 import {useHistory,Switch,Route} from 'react-router-dom';
 import { UsernameProvider } from "./UsernameContext";
 import AppContent from './AppContent';
+import Homepage from './Homepage';
 import err404 from './images/monster404.png';
 
 
@@ -30,14 +32,14 @@ function App() {
  
   return (
 
-    <div >
+    <div>
   <UsernameProvider>
   
       <Appheader getImage={getImage}/>
       <Switch>
       <Route exact path='/home/search' render={()=><AppContent images={apii.images.slice(0,10)} />} />
-      <Route exact path='/not_found' render={()=><h1>Image not Found!!</h1>}/>
-      <Route exact path='/'render={()=><h1>WeLcome to home page</h1>}/>
+      <Route exact path='/not_found' render={()=><Notfound/>}/>
+      <Route exact path='/'render={()=><Homepage/>}/>
       <Route render={()=><div className='err404'><img  alt='404 Not Found' src={err404}/></div>} />
       </Switch>
     </UsernameProvider>

@@ -1,0 +1,42 @@
+
+.Notfound {
+    background: url('../images/homepage_bg.jpg') center center/cover
+    no-repeat;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+}
+
+.Notfound >h1{
+    color: rgb(14, 13, 13);
+    font-size: 100px;
+    margin-top: -100px;
+}
+.Notfound >p{
+    margin-top: 8px;
+    color: rgb(24, 23, 23);
+    font-size: 32px;
+}
+
+@media screen and (max-width: 960px){
+    .Notfound >h1{
+        font-family: 70px;
+        margin-top: -150px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .Notfound h1{
+        font-size: 50px;
+        margin-top: -100px;
+    }
+    .Notfound >p{
+        font-size: 20px;
+    }
+}
+
