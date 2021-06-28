@@ -16,11 +16,11 @@ function Post(props) {
     useEffect(()=>{
         console.log('ineffects');
         window.localStorage.setItem(`comment${keypost}`,JSON.stringify([...comment]))
-        console.log(commenthistory)
-        console.log(props.imgdetail.id)
+      //  console.log(commenthistory)
+       // console.log(props.imgdetail.id)
     },[comment])
 
-console.log('return se pehle')
+// console.log('return se pehle')
     return (
         <div className='Post'>
             <div className='Post_header'>    
@@ -28,7 +28,7 @@ console.log('return se pehle')
                 <h4>{props.imgdetail.user}</h4>
             </div>
                 <img src={props.imgdetail.largeImageURL}
-                    alt={props.imgdetail.user} />
+                    alt="Search Img" />
                 <p key={uuidv4()}>
                     <b>{props.imgdetail.user}</b>
                     {props.imgdetail.tags}
@@ -46,6 +46,7 @@ console.log('return se pehle')
                     <form onSubmit={e=>{
                         e.preventDefault();
                         setcomment([...comment,{key:uuidv4(), user:username,comnt:commenttyped}])
+                        e.target.reset();
                     }}
                      noValidate autoComplete="off">
                         <TextField id="standard-basic" label="Write a Comment" 

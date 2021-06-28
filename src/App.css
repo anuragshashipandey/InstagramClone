@@ -1,3 +1,9 @@
 *{
   margin: 2px;
 }
+.err404 img{
+  width: 70%;
+  height:90%;
+  position: fixed;
+  left: 10%;
+}
