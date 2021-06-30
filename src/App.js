@@ -40,7 +40,7 @@ function App() {
       <Route exact path='/home/search' render={()=><AppContent images={apii.images.slice(0,10)} />} />
       <Route exact path='/not_found' render={()=><Notfound/>}/>
       <Route exact path='/'render={()=><Homepage/>}/>
-      <Route render={()=><div className='err404'><img  alt='404 Not Found' src={err404}/></div>} />
+      <Route render={()=><div  className='err404'><img data-testid='err404'  alt='404 Not Found' src={err404}/></div>} />
       </Switch>
     </UsernameProvider>
   </div>

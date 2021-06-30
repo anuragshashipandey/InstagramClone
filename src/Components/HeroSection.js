@@ -7,8 +7,8 @@ function HeroSection() {
             <video controls autoPlay loop muted>
                 <source src={myvid} type="video/mp4"/>
             </video>
-            <h1>A Picture is a poem without words.</h1>
-            <p>What are you waiting for?Go head...</p>
+            <h1 data-testid='intro'>A Picture is a poem without words.</h1>
+            <p data-testid='about'>What are you waiting for?Go ahead...</p>
         </div>
     )
 }

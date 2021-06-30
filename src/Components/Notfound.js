@@ -3,8 +3,8 @@ import '../style/Notfound.css'
 function Notfound() {
     return (
         <div className='Notfound'>
-        <h1>Picture Not Available ;(</h1>
-        <p>Search for anything else....</p>
+        <h1 data-testid='intro'>Picture Not Available ;(</h1>
+        <p data-testid='about'>Search for anything else....</p>
         </div>
     )
 }

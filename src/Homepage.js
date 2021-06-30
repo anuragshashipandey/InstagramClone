@@ -4,7 +4,7 @@ import Herosection from './Components/HeroSection'
 function Homepage () {
         return (
             <div>
-                 <Herosection />
+                <Herosection />
             </div>
         )
     

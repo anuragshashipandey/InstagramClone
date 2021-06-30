@@ -22,8 +22,8 @@ export default function Appheader(props) {
             onSubmit={ e =>{
               e.preventDefault();
               props.getImage(search);
-            history.push("/home/search");
-            e.target.reset();
+              history.push("/home/search");
+              e.target.reset();
             }}
         >
             
