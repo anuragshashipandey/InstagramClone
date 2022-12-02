@@ -18,7 +18,7 @@ function Post(props) {
         window.localStorage.setItem(`comment${keypost}`,JSON.stringify([...comment]))
       //  console.log(commenthistory)
        // console.log(props.imgdetail.id)
-    },[comment])
+    },[comment,keypost])
 
 // console.log('return se pehle')
     return (
